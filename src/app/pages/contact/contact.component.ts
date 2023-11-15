@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from 'src/app/services/info-pagina.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  constructor(
+    public infoServ: InfoPaginaService
+  ) { }
 }

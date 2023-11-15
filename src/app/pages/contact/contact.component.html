@@ -1,5 +1,6 @@
 <!-- ======= Contact Section ======= -->
-<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+    style="background-image: url(assets/img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
         <div class="row">
@@ -10,7 +11,7 @@
                             <div class="col-md-6">
                                 <div class="title-box-2">
                                     <h5 class="title-left">
-                                        Send Message Us
+                                        Contacto
                                     </h5>
                                 </div>
                                 <div>
@@ -19,13 +20,13 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
                                                     <input type="text" name="name" class="form-control" id="name"
-                                                        placeholder="Your Name" required>
+                                                        placeholder="Su Nombre" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
                                                     <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Your Email" required>
+                                                        placeholder="Su Correo" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-3">
@@ -37,17 +38,18 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <textarea class="form-control" name="message" rows="5"
-                                                        placeholder="Message" required></textarea>
+                                                        placeholder="Mensaje" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 text-center my-3">
                                                 <div class="loading">Loading</div>
                                                 <div class="error-message"></div>
-                                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                <div class="sent-message">Su mansaje ha sido enviado. Gracias!</div>
                                             </div>
                                             <div class="col-md-12 text-center">
-                                                <button type="submit" class="button button-a button-big button-rouded">Send
-                                                    Message</button>
+                                                <button type="submit"
+                                                    class="button button-a button-big button-rouded">Enviar
+                                                    Mensaje</button>
                                             </div>
                                         </div>
                                     </form>
@@ -56,32 +58,36 @@
                             <div class="col-md-6">
                                 <div class="title-box-2 pt-4 pt-md-0">
                                     <h5 class="title-left">
-                                        Get in Touch
+                                        Ponerse en Contacto Conmigo
                                     </h5>
                                 </div>
                                 <div class="more-info">
                                     <p class="lead">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem
-                                        soluta quidem
-                                        expedita aperiam aliquid at.
-                                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                                        mollitia inventore?
+                                        Gracias por visitar mi Portafolio Personal. Si tienes alguna pregunta,
+                                        comentario o simplemente quieres saludar,
+                                        ¡estaré encantado de escucharte! Puedes llenar el formulario a continuación y
+                                        me aseguraré de responder tan pronto como sea posible. Tamien Puedes encontrar
+                                        más sinformación
+                                        sobre mí en mi redes sociales
                                     </p>
                                     <ul class="list-ico">
-                                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
-                                        <li><span class="bi bi-envelope"></span> contact&#64;example.com</li>
+                                        <li><span class="bi bi-geo-alt"></span> {{ infoServ.info.direccion }} </li>
+                                        <li><span class="bi bi-phone"></span> {{ infoServ.info.celular }} </li>
+                                        <li><span class="bi bi-envelope"></span> {{ infoServ.info.correo }} </li>
                                     </ul>
                                 </div>
                                 <div class="socials">
                                     <ul>
-                                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a>
+                                        <li><a target="_blank" [href]="infoServ.info.facebook"><span class="ico-circle"><i
+                                                        class="bi bi-facebook"></i></span></a>
                                         </li>
-                                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a>
+                                        <li><a target="_blank" [href]="infoServ.info.instagram"><span class="ico-circle"><i
+                                                        class="bi bi-instagram"></i></span></a>
                                         </li>
-                                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a>
+                                        <li><a target="_blank" [href]="infoServ.info.twitter"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a>
                                         </li>
-                                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a>
+                                        <li><a target="_blank" [href]="infoServ.info.linkedin"><span class="ico-circle"><i
+                                                        class="bi bi-linkedin"></i></span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -91,6 +97,6 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </section>
 <!-- End Contact Section -->

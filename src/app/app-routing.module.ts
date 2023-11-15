@@ -6,15 +6,17 @@ import { ServicesComponent } from './pages/services/services.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { TemplateComponent } from './pages/template/template.component';
 
 const routes: Routes = [
+  { path: '', component: TemplateComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'portafolio', component: PortafolioComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home'}
+  { path: '**', pathMatch: 'full', redirectTo: '/'}
 ];
 
 @NgModule({

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -9,4 +11,5 @@ export class AppComponent {
 
   title = 'portafolio';
 
+ 
 }

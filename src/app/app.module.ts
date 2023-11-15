@@ -3,34 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { CounterComponent } from './pages/counter/counter.component';
-import { PortafolioComponent } from './pages/portafolio/portafolio.component';
-import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
-import { BlogComponent } from './pages/blog/blog.component';
-import { ContactComponent } from './pages/contact/contact.component';
+
+//mis importaciones
+import{ HttpClientModule }from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    AboutComponent,
-    ServicesComponent,
-    CounterComponent,
-    PortafolioComponent,
-    TestimonialsComponent,
-    BlogComponent,
-    ContactComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    SharedModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
